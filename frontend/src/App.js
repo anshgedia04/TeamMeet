@@ -48,7 +48,7 @@ function App() {
       <MeetingAppProvider>
         <Suspense fallback={<div>Loading...</div>}>
           <div className="flex flex-col min-h-screen bg-[#0B0F17]">
-            <Navbar />
+            {!isMeetingStarted && <Navbar />}
             <div className="flex-grow pt-16">
               {isMeetingStarted ? (
                 <MeetingProvider
