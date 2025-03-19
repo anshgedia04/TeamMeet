@@ -35,7 +35,7 @@ export function MeetingDetailsScreen({
           <button
             className="ml-16"
             onClick={() => {
-              const copyMessage =`\n🎉 You're invited to join a TeamMeet conversation at:\n🔗 https://sg34-peermeet.web.app/\n\n\n🚀 Meeting ID: ${meetingId}\n\n\nJoin us and let's connect! 🌐`;
+              const copyMessage =`\n🎉 You're invited to join a TeamMeet conversation at:\n🔗 https://teammeet-pro.vercel.app/\n\n\n🚀 Meeting ID: ${meetingId}\n\n\nJoin us and let's connect! 🌐`;
               navigator.clipboard.writeText(copyMessage);
               setIsCopied(true);
               setTimeout(() => {
@@ -52,7 +52,7 @@ export function MeetingDetailsScreen({
           <button
             className="ml-2 text-gray-500 hover:text-gray-100 text-3xl"
             onClick={() => {
-              const copyMessage =`\n🎉 You're invited to join a TeamMeet conversation at:\n🔗 https://sg34-peermeet.web.app/\n\n\n🚀 Meeting ID: ${meetingId}\n\n\nJoin us and let's connect! 🌐`;
+              const copyMessage =`\n🎉 You're invited to join a TeamMeet conversation at:\n🔗 https://teammeet-pro.vercel.app/\n\n\n🚀 Meeting ID: ${meetingId}\n\n\nJoin us and let's connect! 🌐`;
               const subject = "Join the TeamMeet Conversation!";
               const body = encodeURIComponent(copyMessage);
               window.open(`mailto:?subject=${subject}&body=${body}`);
